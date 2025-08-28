@@ -9,7 +9,7 @@ This project tackles the critical challenge of model robustness in computer visi
 ## Architecture
 
 <p align="center">
-  <img src="docs/images/architecture.png" alt="Domain Adaptation Architecture" width="800">
+  <img src="./architecture.png" alt="Domain Adaptation Architecture" width="800">
 </p>
 
 *Domain-Adversarial Neural Network architecture featuring dual classifiers with gradient reversal layer for learning domain-invariant features*
@@ -23,7 +23,7 @@ This project tackles the critical challenge of model robustness in computer visi
 ## Distortion Types
 
 <p align="center">
-  <img src="docs/images/distortions.png" alt="Image Distortion Examples" width="900">
+  <img src="./distortions.png" alt="Image Distortion Examples" width="900">
 </p>
 
 *Ten distortion techniques applied to test images: grayscale, false-color, high/low-pass filtering, noise, rotations, contrast adjustments, and salt-and-pepper noise*
@@ -40,7 +40,7 @@ This project tackles the critical challenge of model robustness in computer visi
 ### Training Curves
 
 <p align="center">
-  <img src="docs/images/training_curves.png" alt="Training Curves" width="800">
+  <img src="./training_curves.png" alt="Training Curves" width="800">
 </p>
 
 *Loss and accuracy curves showing model convergence on both source and target domains*
@@ -224,7 +224,7 @@ class GradientReversalLayer(torch.autograd.Function):
 The domain discriminator's inability to distinguish between source and target domains (loss approaching 0.5) indicates successful feature alignment:
 
 <p align="center">
-  <img src="docs/images/domain_loss.png" alt="Domain Loss Convergence" width="600">
+  <img src="./domain_loss.png" alt="Domain Loss Convergence" width="600">
 </p>
 
 ### t-SNE Visualization
